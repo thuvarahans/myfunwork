@@ -4,10 +4,19 @@
 <title>G..</title>
 <meta charset=utf-8>
 <script src='https://www.google.com/recaptcha/api.js'></script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"async defer>
+</script>
 </head>
 <body>
 <h1>Google reCAPTCHA test</h1>
 <p>Adds the vanilla <a href="https://www.google.com/recaptcha">reCAPTCHA</a> widget, for testing...</p>
 <div class="g-recaptcha" data-sitekey="6LcjmOAZAAAAAK_ZGhOp8qZyPvfzz9bOQIJ3RCL2"></div>
+  
+  <script type="text/javascript">
+  var onloadCallback = function() {
+    alert("grecaptcha is ready!");
+  };
+</script>
+  
 </body>
 </html>
